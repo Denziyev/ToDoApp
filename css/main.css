@@ -1,0 +1,224 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+     -moz-text-size-adjust: none;
+          text-size-adjust: none;
+}
+
+footer, header, nav, section, main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #B07289;
+  padding: 44px 0;
+  display: flex;
+  justify-content: center;
+}
+body #whiteboard {
+  width: 70%;
+  background: #FFFFFE;
+  border-radius: 24px;
+  box-shadow: 0px 4px 4px 0px #FFFFFF;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body #whiteboard #generaltitle {
+  font-family: Inter;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 34px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+body #whiteboard #options {
+  width: 100%;
+  display: flex;
+  margin-top: 60px;
+  margin-bottom: 40px;
+  gap: 80px;
+}
+body #whiteboard #options .error {
+  height: 20px;
+  width: 100%;
+}
+body #whiteboard #options .option {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex: 33% 33% 33%;
+  gap: 8px;
+}
+body #whiteboard #options .option p {
+  font-family: Inter;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+body #whiteboard #options .option input {
+  width: 298px;
+  height: 42px;
+  border-radius: 10px;
+  border: 2px solid #E53170;
+  padding: 10px;
+}
+body #whiteboard #options .option input:focus-visible, body #whiteboard #options .option input:focus {
+  border: 2px solid #E53170;
+}
+body #whiteboard #options .option select {
+  width: 298px;
+  height: 42px;
+  border-radius: 10px;
+  border: 2px solid #E53170;
+  font-weight: 500;
+  padding: 10px;
+  transition: 0.5s;
+}
+body #whiteboard #options .option select option {
+  border: 2px solid #E53170;
+}
+body #whiteboard #options .option a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 149px;
+  height: 42px;
+  top: 143px;
+  left: 715px;
+  border-radius: 15px;
+  background: #E53170;
+  text-decoration: none;
+  padding: 0 15px;
+  transition: 0.5s;
+}
+body #whiteboard #options .option a p {
+  font-family: Inter;
+  font-size: 19px;
+  font-weight: 600;
+  line-height: 23px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #FFFFFF;
+}
+body #whiteboard #options .option a:hover {
+  background-color: transparent;
+}
+body #whiteboard #options .option a:hover p {
+  color: #E53170;
+}
+body #whiteboard #options .option3 {
+  justify-content: flex-end;
+}
+body #whiteboard #noteboard {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+body #whiteboard #noteboard .note {
+  width: 100%;
+  height: 85px;
+  background: #FFFFFF;
+  border-radius: 12px;
+  box-shadow: 0px 0px 9px 0px #E5E5E5;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+body #whiteboard #noteboard .note .noteleft {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+}
+body #whiteboard #noteboard .note .noteleft .notetitle {
+  font-family: Inter;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #0F0E17;
+}
+body #whiteboard #noteboard .note .noteleft .notepriority {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Open Sans;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: left;
+  background: #FCEEF5;
+  width: 43.16px;
+  height: 23px;
+  padding: 3.51px, 5.85px, 3.51px, 7.02px;
+  border-radius: 5px;
+  gap: 9px;
+}
+body #whiteboard #noteboard .note .noteright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
